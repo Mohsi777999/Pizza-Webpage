@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* Top Bar Style  */
+
+.top-bar{
+    background-color: rgb(237, 93, 117);
+    width: 100vw;
+    height: 60px;
+}
+
+.top-bar ul{
+    display: flex;
+    padding-top: 15px;
+    gap: 30px;
+    align-items: center;
+}
+
+.top-bar ul li{
+    list-style-type: none;
+}
+
+.top-bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+
+/* Nav Items Style  */
+
+.nav-items{
+    background-color: rgb(237, 168, 180);
+    width: 100vw;
+}
+
+.nav-items li a{
+    color: white;
+}
+
+.nav-items li a:hover{
+    background-color: rgb(174, 97, 110);
+    color: white;
+}
+
+
+/* Card Style  */
+
+.card{
+    background-color: rgb(255 194 205);
+     border-radius: 20px;
+     box-shadow: 10px 10px 10px rgb(169, 168, 168);
+     transition: all 0.5s ease-in-out;
+}
+
+.card h4{
+    font-size: 15px;
+}
+
+.card h5{
+    font-size: 14px;
+}
+
+.card input{
+     width: 50%;
+     height: 25px;
+     margin-bottom: 10px;
+}
+
+.card img{
+    border-radius: 30px;
+}
+
+.card a{
+    color: black;
+}
+
+.card:hover{
+    transform: translateY(20px);
+}
+
+
+
+
+/* Responsive Code  */
+
+@media (max-width:480px){
+  .pizza-cards .row{
+    padding-left: 30px;
+  }
+}
+
+@media (min-width:480px) and (max-width:992px) {
+  .pizza-cards .row{
+    padding-left: 75px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+  .pizza-cards .row{
+    padding-left: 130px;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1500px) {
+  .pizza-cards .row{
+    gap: 100px;
+    padding-right: 100px;
+  }
+}
